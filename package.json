@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/Waserman/node-es2015-api#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "bcrypt": "^1.0.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.6"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
