@@ -13,8 +13,8 @@ const paths = {
 gulp.task('babel', () => {
   return gulp.src(paths.js, { base: '.' })
     .pipe(plugins.babel())
-    .pipe(gulp.dest('dist'))
-});
+    .pipe(gulp.dest('dist'));
+})
 
 // Start server with restart on file change events
 gulp.task('nodemon', ['babel'], () =>
@@ -24,4 +24,4 @@ gulp.task('nodemon', ['babel'], () =>
     ignore: ['node_modules/**/*.js', 'dist/**/*.js'],
     tasks: ['babel']
   })
-);
+)
